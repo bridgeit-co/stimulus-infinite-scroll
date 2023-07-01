@@ -5,6 +5,8 @@
 - Harry Potter is in trouble with Dolores Umbridge again, and he’s been forced to write out 200 lines of “I must not tell lies”. 
 - You’re task is to help Harry magically load more lines as he scrolls down the page.
 
+![intersection-obs-quest-endpoint](https://github.com/lankan01/quest_infinite_scroll/assets/108777684/274eb2c1-4acb-484d-9bc1-0e57c99a84e0)
+
 **How we’re going to help Harry achieve this:**
 - Currently, when Harry clicks ‘load more lines’ the next set of 10 lines is loaded using Turbo Streams - but this is too slow.
 - So to help him, we’re going to be using the Intersection Oberserver API via the Stimulus controller to autoload the content when he scrolls, without having to click anything
@@ -32,3 +34,7 @@
     - partial 1 = _lines.html.erb which renders each line and its content
     - partial 2 = _pager.html.erb which contains the link that, when clicked, loads more lines using Turbo Streams
     - file 4 = index.turbo_stream.erb uses Turbo Streams to append new lines to the "lines" target and replace the "pager" target with updated content (again the focus of this quest is on IO, so you dont need to have a deep understanding of turbo streams for this quest, but we do recommend taking getting to grips with it on your coding journey).
+      
+ ![intersection-obs-quest-startingpoint](https://github.com/lankan01/quest_infinite_scroll/assets/108777684/6e9d633b-7f88-448a-add6-935428eb0c8e)
+
+  
