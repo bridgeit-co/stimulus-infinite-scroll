@@ -20,7 +20,7 @@
 
 
 
-# Bonus Information
+## Bonus Information
 **Understanding what you’re starting with:**
 - The app is split into one model: line with one attribute: content (text)
 - The Lines Controller has only one method, index which uses the pagy gem (read more about the gem here)
