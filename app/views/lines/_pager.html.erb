@@ -1,12 +1,14 @@
-<div id="pager" class="min-w-full my-8 flex justify-center">
+<div id="pager" class="min-w-full my-8 flex justify-center" style="margin-top: 30px">
   <div>
     <% if pagy.next %>
       <%= link_to(
         "Load more lines",
         lines_path(page: pagy.next),
-        class: "rounded py-3 px-5 bg-gray-600 block hover:bg-gray-800",
+        class: "rounded py-3 px-5 bg-gray-600 hover:bg-gray-800",
+        style: "opacity: 0",
         data: {
-          turbo_stream: ""
+          turbo_stream: "",
+          controller: "intersection"
         }
       ) %>
     <% end %>

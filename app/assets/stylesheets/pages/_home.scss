@@ -1,1 +1,23 @@
-// Specific CSS for your home-page
+.lined-paper{
+  font-family: Courier, monospace;
+  background-color: white;
+  background-image: repeating-linear-gradient(
+   #F0F0F0,
+   #F0F0F0 25px,
+    #734610 26px 27px
+    ) !important;
+  background-position-y: 34px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+  margin-right: 15px;
+ }
+
+ .lined-text {
+  position: relative;
+  top: 30px;
+  font-size: 18px;
+  margin: 0 20px;
+  line-height: 27px;
+ }
